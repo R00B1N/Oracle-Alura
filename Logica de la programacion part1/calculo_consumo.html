@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+
+
+<h3>¿Alcohol o gasolina?</h3>
+
+<script>
+
+	//Estableciendo variables.
+	let tanque = 40;
+	var kilometros = 480;
+	
+	document.write("El consumo de gasolina por kilometro recorrido es de: 1 litro por cada 12 kilometros!");
+	document.write("<br>\n<h3>Solucion:</h3>");
+	document.write("En primer lugar podemos efectuar la siguiente operacion: 480/40 eso es igual a " + (kilometros / tanque) + ".");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("La segunda operacion que podemos realizar es la de dividir los valores al inverso, en este caso: 40/480 eso es igual a " + (tanque / kilometros) + "." + "Pero al utilizar el parametro <b>Math.round</b> para redondear la cifra, podemos ver que el resultado es de: " +  Math.round(0.83));
+	document.write("<br>");
+	document.write("<br>");
+	kilometros = 300;
+	document.write("El consumo de Alcohol es de: " + (kilometros/tanque) + ".");
+
+
+</script>

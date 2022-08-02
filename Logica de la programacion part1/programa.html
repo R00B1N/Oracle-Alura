@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+
+<h1>Programa</h1>
+
+<script>
+
+	//Creando nuestra primera funcion.
+	function saltarLinea(){
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<hr>");
+	}
+
+	//Funcion con parametros creada para imprimir.
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarLinea();
+	}
+	
+	//Creando la variable para el año.
+	var years = 2022;
+
+	imprimir("Jimena tiene: " + (years - 2005) + "años");
+
+	imprimir("Paola tiene: " + (years - 2000) + "años");
+
+	imprimir("Laura tiene: " + (years - 1995) + "años");
+
+	//Creando variables para las edades.
+	var jimena = ["Jimena", 17];
+	var paola = ["Paola", 22];
+	var laura = ["Laura", 27];
+
+	//Creando la variable para el promedio.
+	var promedio = (jimena[1]+paola[1]+laura[1])/3;
+
+	document.write("El promedio de la edad de " + jimena[0] + ", " + paola[0] + " y " + laura[0] + " es de: " + promedio);
+
+
+</script>

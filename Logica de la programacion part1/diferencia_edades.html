@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<h1>¿Cuántos años de diferencia tienes con tu hermano?</h1>
+
+
+<script>
+	
+	//Funcio para salto de lineas.
+	function saltarLinea(){
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	};
+
+	//Funcion para imprimir los datos en pantalla.
+	function imprimir(data){
+		document.write(data);
+		saltarLinea()
+	}
+
+	//Variables para nuestra operacion.
+	let dateBro = 2006;
+	let dateMe = 2002;
+
+	//Llamando nuestra funcion.
+	imprimir("Nuestra diferencia de edad es: " + (dateBro - dateMe));
+
+</script>

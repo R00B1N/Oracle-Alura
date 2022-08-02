@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<h1>Calculando el indice de masa corporal</h1>
+
+<script>
+	
+	function saltarLineas(){
+
+		document.write("<br>");
+	};
+
+	function imprimir(frase){
+		document.write(frase);
+		saltarLineas();
+	};
+
+	function calcularImc(peso, altura, nombre){
+
+		var peso = prompt("Ingrese su peso: ");
+		var altura = prompt("Ingrese su altura: ");
+		var nombre = prompt("Ingrese su nombre: ");
+
+		var imc = peso / (altura * altura);
+		imprimir("El IMC calculado de " + nombre + " es igual a " + imc);
+	};
+
+	calcularImc();
+
+</script>
