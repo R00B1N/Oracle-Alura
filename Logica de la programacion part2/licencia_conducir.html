@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+
+<h1>¿Será qué puedo conducir?</h1>
+<hr>
+<br>
+
+<p>Ingrese su edad aqui.</p>
+<input type="text" name="age" id=edad>
+<hr>
+<p>Tiene licencia de conducir?</p>
+<br>
+<label><input type="checkbox" id="cbox1" value="first_checkbox"> SI</label><br>
+<label><input type="checkbox" id="cbox2" value="second_checkbox"> NO</label><br>
+<hr>
+<br>
+<button id="btn">Verificar</button>
+
+<script>
+	
+	function saltarLinea() {
+        document.write("<br>");
+    };
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    };
+
+    var bt = document.getElementById('btn');
+    bt.addEventListener("click", function check_license(){
+    	var age_input = document.getElementById('edad').value;
+    	var myage = parseInt(age_input);
+    	var chk1 = document.getElementById('cbox1');
+    	var chk2 = document.getElementById('cbox2');
+
+    	if (myage > 18 && chk1.checked) {
+    		alert("Eres legible para conducir!");
+    	}
+    	else if (myage > 18 && chk2.checked) {
+    		alert("Necesitas tener una licencia para conducir!.");
+    	}
+    	else if (myage < 18 && chk1.checked) {
+    		alert("No tienes la edad minima para conducir!.");
+    	}
+    	else if (myage < 18 && chk2.checked) {
+    		alert("Lo sentimos, no cumples con los requisitos!.");
+    	}
+    	else {
+    		alert("Por favor revisa los campos y vuelve a intentarlo!.");
+    	};
+    });
+
+</script>

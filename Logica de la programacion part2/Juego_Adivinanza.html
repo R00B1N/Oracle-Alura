@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+
+<h1>Adivina el Numero.</h1>
+<hr>
+<p>Ingresa un numero entre 0 y 10 aqui.</p>
+<input type="number" name="cajita" id=mybox>
+<button id=botoncito onclick="checkNumber();">Adivinalo!</button>
+
+<script>
+	
+	function saltarLineas(){
+
+		document.write("<br>");
+		document.write("<br>");
+	};
+
+	function imprimir(frase){
+		document.write(frase);
+		saltarLineas();
+	};
+
+	function checkNumber() {
+		var ran_num = Math.round(Math.random()*10);
+		var intentos = 0;
+
+		//Obteniendo el valor de nuestro input.
+		var cajita = document.getElementById('mybox').value;
+		var num = parseInt(cajita);
+		
+		//Creando los condicionales para verificar si el numero es correcto o no.
+		if (num == ran_num) {
+			alert("Adivinaste el numero!!... Tu numero: " + num);
+		};
+		if (num != ran_num) {
+			alert("No adivinaste esta vez!!... Intentalo de nuevo.");
+		};
+
+	};
+
+</script>
