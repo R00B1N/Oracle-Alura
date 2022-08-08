@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+
+<h1>Loteria</h1>
+<hr>
+
+<script>
+
+	function saltarLineas() {
+
+		document.write("<br>");
+		document.write("<br>");
+	};
+
+	function imprimir(frase) {
+		
+		document.write(frase);
+		saltarLineas();
+	}
+
+	function sortea(n) {
+
+		return Math.round(Math.random()*n);
+	};
+
+	//Llamando nuestra funcion.
+	var numeroPensado = parseInt(prompt("Introduzca su numero: "));
+	sortea(numeroPensado);
+
+	var mynumber_to = parseInt(prompt("Ahora adivinelo!: "));
+
+	if (numeroPensado == mynumber_to) {
+		imprimir("Felicitaciones!!, adivinaste el numero. Tu numero era " + mynumber_to);
+	}
+	else if (numeroPensado != mynumber_to) {
+		imprimir("No ganaste, sigue intentando!.");
+	}
+	else {
+		imprimir("Error al comprobar!!.");
+	};
+
+
+</script>

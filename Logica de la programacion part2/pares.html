@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<h1>Calculando la media de edad de una familia</h1>
+
+<script>
+
+	function saltarLineas() {
+
+		document.write("<br>");
+		document.write("<br>");
+	};
+
+	function imprimir(frase) {
+		
+		document.write(frase);
+		saltarLineas();
+	};
+
+	var number = 1;
+
+	while (number <= 100) {
+		if (number % 2 == 0) {
+			imprimir(number);
+		}
+		number = number + 1;
+	}
+
+</script>
