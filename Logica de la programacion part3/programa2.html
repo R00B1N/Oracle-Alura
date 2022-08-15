@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+
+<h1>Jugando con  Cannvas</h1>
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	function dibujarCuadroRojo(x, y) {
+
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+		pincel.fillStyle = "red";
+		pincel.fillRect(x, y, 50, 50);
+		pincel.strokeStyle = "black";
+		pincel.strokeRect(x, y, 50, 50);
+
+	}
+
+	function dibujarCuadroAmarillo(x, y) {
+
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+		pincel.fillStyle = "yellow";
+		pincel.fillRect(x, y, 50, 50);
+		pincel.strokeStyle = "black";
+		pincel.strokeRect(x, y, 50, 50);
+
+	}
+
+	function dibujarCuadroVerde(x, y) {
+
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+		pincel.fillStyle = "green";
+		pincel.fillRect(x, y, 50, 50);
+		pincel.strokeStyle = "black";
+		pincel.strokeRect(x, y, 50, 50);
+
+	}
+
+	dibujarCuadroRojo(0, 0);
+	dibujarCuadroAmarillo(0, 50);
+	dibujarCuadroVerde(0, 100);
+
+
+
+</script>

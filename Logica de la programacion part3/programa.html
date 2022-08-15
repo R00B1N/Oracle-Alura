@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	//Creamos nuestro canvas para dibujar sobre el.
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+
+	pincel.fillStyle = "lightgrey"; //Establecer el color de nuestro pincel.
+	//pincel.fillRect(x, y, w, h);
+	pincel.fillRect(0, 0, 600, 400); //Establecer la orientacion del relleno.
+
+	pincel.fillStyle = "green"; //Propiedad.
+	pincel.fillRect(0, 0, 200, 400);  //Funcion.
+
+	pincel.fillStyle = "red";
+	pincel.fillRect(400, 0, 200, 400);
+
+	//Dibujando un triangulo.
+	pincel.fillStyle = "yellow";
+	pincel.beginPath();
+	pincel.moveTo(300, 200);
+	pincel.lineTo(200, 400);
+	pincel.lineTo(400, 400);
+	pincel.fill();
+
+	//Dibujando un circulo.
+	pincel.fillStyle = "blue";
+	pincel.beginPath();
+	pincel.arc(300, 200, 50, 0, 2 * 3.14);
+	pincel.fill();
+
+
+</script>
